@@ -106,6 +106,9 @@ resetButton.addEventListener('click', () => {
 })
 
 breakMinusElement.addEventListener('click', () => {
+    if (breakSessionLength - 60 === 0) {
+        return;
+    }
     breakSessionLength -= 60;
     breakSessionElement.textContent = breakSessionLength / 60;
 })
@@ -116,6 +119,9 @@ breakPlusElement.addEventListener('click', () => {
 })
 
 sessionMinusElement.addEventListener('click', () => {
+    if (sessionLength - 60 === 0) {
+        return;
+    }
     sessionLength -= 60;
     sessionElement.textContent = sessionLength / 60;
     if (isSessionMode) {
