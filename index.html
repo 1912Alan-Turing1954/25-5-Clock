@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>25 + 5 Clock</title>
+</head>
+<body>
+    <CENTER>
+        <h1 class="mt-5"> 25 + 5 <i class="fa fa-clock-o"></i></h1>
+        <div class="card shadow-lg" style="margin-left: 100px; margin-right: 100px; margin-top: 50px;">
+            <h4>Break Session Length</h4>
+            <div>
+                <button class="btn btn-danger" id="break-minus-element">-</button>
+                <span class="fw-bold p-2" id="break-session-element">5</span>
+                <button class="btn btn-primary" id="break-plus-element">+</button>
+            </div>
+
+            <h4>Session Length</h4>
+            <div>
+                <button class="btn btn-danger" id="session-minus-element">-</button>
+                <span class="fw-bold p-2" id="session-element">25</span>
+                <button class="btn btn-primary" id="session-plus-element">+</button>
+            </div>
+
+            <div class="p-1">
+                <h2 id="title">Session</h2>
+                <h2><i class="fa fa-calendar-times-o"></i><span id="timer-minutes">25</span>:<span id="timer-seconds">00</span></h2>
+            </div>
+            <div class="p-1 pb-3">
+                <button class="btn btn-primary" id="play-button">Play</button>
+                <button class="btn btn-info" id="pause-button">Pause</button>
+                <button class="btn btn-danger" id="reset-button">Reset</button>
+            </div>
+        </div>
+    </CENTER>
+    <script src="./src/script.js"></script>
+</body>
+</html>
